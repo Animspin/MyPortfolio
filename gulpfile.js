@@ -32,6 +32,17 @@ gulp.task('styles', function() {
 gulp.task('watch', function() {
     gulp.watch("src/sass/*.scss", gulp.parallel("styles"));
     gulp.watch("src/*.html").on("change", browserSync.reload);
-})
+});
+
+gulp.task('build', function() {
+    return src([ // Выбираем нужные файлы
+		'src/css/*.min.css',
+		'src/js/*.js',
+		'src/img/**/*',
+        'src/icons/**/*',
+		'src/**/*.html',
+		], { base: 'src' }) // Параметр "base" сохраняет структуру проекта при копировании
+	.pipe(dest('dist'))
+});
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
