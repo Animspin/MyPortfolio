@@ -1,0 +1,19 @@
+.about-me {
+    padding: 120px 0;
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__photo {
+        justify-self: center;
+    }
+    &__descr {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    &__skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
