@@ -10,16 +10,7 @@
             width: 100%;
         }
     }
-    &__info {
-        span {
-            display: block;
-            margin-bottom: 15px;
-            width: 60px;
-            height: 0px;
-            border: 2px solid $main-color;
-        }
-    }
-    &__subtitle {
+    &__title {
         position: relative;
         font-weight: 700;
         padding: 6px 0 0 12px;
@@ -31,8 +22,13 @@
     &__descr {
         display: grid;
         grid-template-rows: minmax(250px, auto) minmax(250px, auto);
-        row-gap: 40px;
         padding-right: 100px;
+        .divider {
+            margin: 0;
+        }
+    }
+    &__text {
+        padding: 20px 0 40px;
     }
     &__skills {
         display: grid;
