@@ -1,0 +1,87 @@
+.skills {
+    margin-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        gap: 13px;
+        grid-auto-rows: auto;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    &__item {
+        display: grid;
+        grid-template-rows: 65px auto auto;
+        row-gap: 20px;
+        padding: 30px 30px 25px;
+        border: 1px solid #000;
+        img {
+            align-self: center;
+        }
+        &-name {
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 700;
+        }
+        &-text {
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 500;
+        }
+    }
+    &__progress {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        column-gap: 45px;
+        row-gap: 30px;
+        justify-content: center;
+        &-item {
+            display: grid;
+            grid-template-columns: 8fr 2fr;
+            row-gap: 20px;
+        }
+        &-name {
+            position: relative;
+            padding:2px 0 0 13px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            @include before_circle;
+        }
+        &-procent {
+            justify-self: end;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &-rectangle {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            width: 350px;
+            height: 14px;
+            background: #E8E4DE;
+            border-radius: 4px;
+            z-index: -1;
+            &-complite {
+                width: 300px;
+                height: 14px;
+                background: $main-color;
+                border-radius: 4px;
+            }
+        }
+    }
+}
