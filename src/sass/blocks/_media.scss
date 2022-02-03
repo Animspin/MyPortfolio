@@ -1,0 +1,180 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .about-me {
+        padding: 100px 0 0 0;
+        &__grid {
+            grid-template-columns: 400px 520px;
+            column-gap: 50px;
+        }
+        &__descr {
+            padding-right: 20px;
+        }
+    }
+    .resume {
+        margin-top: 80px;
+        .divider {
+            margin: 10px auto 0;
+        }
+        &__wrapper {
+            padding: 50px 0 0 0;
+            column-gap: 100px;
+        }
+    }
+    .skills {
+        margin-top: 80px;
+        &__grid {
+            grid-template-columns: repeat(3, 270px);
+        }
+        &__progress {
+            margin-top: 80px;
+            grid-template-columns: repeat(2, 350px);
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .title {
+        &_fz36 {
+            font-size: 30px;
+        }
+    }
+    .about-me {
+        padding: 70px 0 0 0;
+        &__grid {
+            grid-template-columns: 300px 380px;
+            column-gap: 40px;
+        }
+        &__descr {
+            padding-right: 20px;
+        }
+        &__skills {
+            grid-template-columns: 1fr;
+            grid-template-rows: minmax(50px,auto);
+        }
+    }
+    .resume {
+        margin-top: 80px;
+        .divider {
+            margin: 10px auto 0;
+        }
+        &__wrapper {
+            padding-top: 30px;
+            grid-template-columns: 1fr;
+        }
+    }
+    .skills {
+        &__grid {
+            grid-template-columns: repeat(2, 270px);
+        }
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 520px;
+        margin: 0 auto;
+        padding-left: 20px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 28px;
+        }
+    }
+    .promo {
+        &__title {
+            line-height: 39px;
+            width: 300px;
+        }
+        &__btns {
+            margin-right: 0;
+        }
+    }
+    .about-me {
+        padding-top: 40px;
+        &__grid {
+            grid-template: 400px auto auto / 1fr;
+            row-gap: 20px;
+        }
+        &__skills-block {
+            display: grid;
+            grid-template-columns: 2fr 14fr;
+            justify-content: space-between;
+        }
+    }
+    .resume {
+        margin-top: 25px;
+    }
+    .skills {
+        &__grid {
+            grid-template-columns: repeat(2, 250px);
+        }
+        &__progress {
+            margin-top: 50px;
+            grid-template-columns: 350px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 26px;
+        }
+        &_fz36 {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    .hamburger {
+        right: 20px;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+    .promo {
+        background: url('../img/main_bg.jpg') no-repeat 57%/cover;
+        &__title {
+            line-height: 39px;
+            width: 300px;
+        }
+        &__btns {
+            margin-top: 30px;
+        }
+    }
+    .about-me {
+        &__grid {
+            grid-template: 340px auto auto / 1fr;
+            row-gap: 20px;
+        }
+        .divider {
+            margin-top: 15px;
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 30px 10px 0;
+        }
+    }
+    .skills {
+        margin-top: 30px;
+        &__grid {
+            margin-top: 20px;
+            grid-template-columns: 270px;
+        }
+        &__progress {
+            grid-template-columns: 300px;
+            &-rectangle {
+                width: 100%;
+            }
+        }
+    }
+}
