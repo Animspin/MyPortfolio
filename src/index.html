@@ -73,7 +73,11 @@
         <div class="container">
             <div class="about-me__grid">
                 <div class="about-me__photo">
-                    <img src="img/main_photo.jpg" alt="my photo">
+                    <img srcset="img/main_photo-min.jpg 300w,
+                                 img/main_photo.jpg 400w"
+                        sizes="(max-width: 576px) 280px, 
+                                (min-width: 577px) 400px"
+                    src="img/main_photo.jpg" alt="my photo">
                 </div>
                 <div class="about-me__descr">
                     <div class="about-me__info">
@@ -365,7 +369,7 @@
         </div>
     </section>
 
-    <!-- <section class="portfolio">
+    <section class="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">
                 Портфолио
@@ -396,9 +400,9 @@
                 </a>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="price">
+    <section class="price">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">
                 Прайс-лист
@@ -438,9 +442,9 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="contacts">
+    <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -498,7 +502,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <script src="js/script.js"></script>
 </body>

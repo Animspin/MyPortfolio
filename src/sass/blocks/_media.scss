@@ -32,6 +32,33 @@
             grid-template-columns: repeat(2, 350px);
         }
     }
+    .portfolio {
+        margin-top: 70px;
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: center;
+            .horizontal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+    .contacts {
+        padding: 100px 0 90px 0;
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 350px 560px;
+        }
+        &__photo {
+            img {
+                width: 100%;
+            }
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 275px);
+        }
+    }
 }
 @media (max-width: 992px) {
     .container {
@@ -69,6 +96,27 @@
     .skills {
         &__grid {
             grid-template-columns: repeat(2, 270px);
+        }
+    }
+    .price {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 350px);
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 300px 400px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px 45px/ repeat(2, auto);
+            column-gap: 15px;
+        }
+        &__triggers {
+            grid-template-columns: 219px;
+            justify-content: center;
+        }
+        &__policy {
+            margin-top: 27px;
         }
     }
 }
@@ -114,6 +162,20 @@
         &__progress {
             margin-top: 50px;
             grid-template-columns: 350px;
+        }
+    }
+    .price {
+        &__wrapper {
+            justify-content: center;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 450px;
+            justify-content: center;
+        }
+        &__photo {
+            display: none;
         }
     }
 }
@@ -175,6 +237,42 @@
             &-rectangle {
                 width: 100%;
             }
+        }
+    }
+    .price {
+        &__wrapper {
+            padding-top: 20px;
+            grid-template-columns: repeat(auto-fit, 290px);
+        }
+        &__name {
+            font-size: 13px;
+        }
+    }
+    .contacts {
+        padding: 40px 0 50px 0;
+        &__wrapper {
+            grid-template-columns: 300px;
+        }
+        &__subtitle {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &__form {
+            grid-template: 45px 45px 190px 45px 45px / 300px;
+        }
+        &__textarea {
+            grid-column: 1;
+        }
+        &__triggers {
+            grid-column: 1;
+        }
+        &__btn {
+            order: 2;
+        }
+        &__policy {
+            order: 1;
+            margin-top: 0;
+            margin-bottom: 27px;
         }
     }
 }

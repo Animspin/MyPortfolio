@@ -9,8 +9,8 @@
     &__item {
         position: relative;
         display: grid;
-        grid-template-columns: 7fr 3fr;
-        grid-template-rows: repeat(2, 21px);
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, minmax(21px, auto));
     }
     &__name {
         padding-left: 20px;

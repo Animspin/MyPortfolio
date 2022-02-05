@@ -3,11 +3,11 @@ const hamburger = document.querySelector('.hamburger'),
     closeElem = document.querySelector('.menu__close');
 
 hamburger.addEventListener('click', () => {
-    menu.classList.add('active')
+    menu.classList.add('active');
 });
 
 closeElem.addEventListener('click', () => {
-    menu.classList.remove('active')
+    menu.classList.remove('active');
 });
 
 const counters = document.querySelectorAll('.skills__progress-procent'),
@@ -15,4 +15,4 @@ const counters = document.querySelectorAll('.skills__progress-procent'),
 
 counters.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML;
-})
+});
