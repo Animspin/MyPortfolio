@@ -201,6 +201,9 @@
             width: 250px;
             padding-left: 20px;
         }
+        &__social {
+            padding-left: 20px;
+        }
     }
     .promo {
         background: url('../img/main_bg.jpg') no-repeat 57%/cover;
@@ -250,6 +253,9 @@
                 width: 100%;
             }
         }
+    }
+    .portfolio {
+        margin-top: 40px;
     }
     .price {
         &__wrapper {
