@@ -3,6 +3,12 @@
     position: relative;
     background: url('../img/main_bg.jpg') no-repeat 50%/cover;
     padding-top: 205px;
+    &__wrapper {
+        background: rgba($color: #fff, $alpha: .5);
+        width: 540px;
+        padding: 20px 0 20px 20px;
+        border-radius: 20px;
+    }
     &__title {
         width: 535px;
         margin-top: 10px;
