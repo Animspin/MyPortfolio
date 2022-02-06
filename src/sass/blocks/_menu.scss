@@ -1,3 +1,9 @@
+header {
+    position: relative;
+    background: rgba($color: #fff, $alpha: .5);
+    height: 61px;
+}
+
 .hamburger {
     position: absolute;
     top: 20px;
@@ -12,7 +18,7 @@
         display: block;
         width: 30px;
         height: 3px;
-        background: #151812;
+        background: $main-color;
     }
     span.long {
         width: 36px;
@@ -85,9 +91,9 @@
     &__social {
         position: absolute;
         bottom: 50px;
-        left: 50%;
+        left: 43%;
         transform: translateX(-50%);
-        width: 90px;
+        width: 150px;
         display: flex;
         justify-content: space-between;
         align-items: center;
