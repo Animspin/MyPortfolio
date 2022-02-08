@@ -203,6 +203,7 @@
         }
         &__social {
             padding-left: 20px;
+            bottom: 80px;
         }
     }
     .promo {
@@ -235,14 +236,23 @@
         .divider {
             margin-top: 15px;
         }
+        &__descr {
+            padding-right: 0;
+        }
+        &__skills-block {
+            grid-template-columns: 45px 240px;
+        }
     }
     .resume {
+        margin-top: 0;
+        padding-top: 40px;
         &__wrapper {
             padding: 30px 10px 0;
         }
     }
     .skills {
-        margin-top: 30px;
+        margin-top: 0;
+        padding-top: 40px;
         &__grid {
             margin-top: 20px;
             grid-template-columns: 270px;
@@ -255,9 +265,12 @@
         }
     }
     .portfolio {
-        margin-top: 40px;
+        margin-top: 0;
+        padding-top: 40px;
     }
     .price {
+        margin-top: 0;
+        padding-top: 40px;
         &__wrapper {
             padding-top: 20px;
             grid-template-columns: repeat(auto-fit, 290px);
@@ -271,12 +284,33 @@
         &__wrapper {
             grid-template-columns: 300px;
         }
+        &__title {
+            margin: 0 auto;
+            width: 100px;
+        }
         &__subtitle {
+            margin: 10px auto 0;
+            width: 231px;
             font-size: 24px;
             line-height: 36px;
         }
+        .divider {
+            margin: 10px auto 0;
+        }
         &__form {
+            display: none; // Убрал форму ибо она пока не рабочая. Подключать мэйлер не хочу, он большой и сложный какой-то. Напишу потом свой мэйлер.
             grid-template: 45px 45px 190px 45px 45px / 300px;
+        }
+        &__text {
+            margin: 20px auto 0;
+            width: 251px;
+            &_2 {
+                display: none; // Убрал, так как нет формы
+            }
+        }
+        &__social {
+            margin: 20px auto 0;
+            width: 149px;
         }
         &__textarea {
             grid-column: 1;
